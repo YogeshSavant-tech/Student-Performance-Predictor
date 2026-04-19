@@ -1,0 +1,1 @@
+-- Database schema for Student Performance Predictor
