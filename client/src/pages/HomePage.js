@@ -1,4 +1,3 @@
-// Home page
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import PredictionForm from "../components/PredictionForm";
@@ -7,9 +6,10 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
 const [result, setResult] = useState(null);
+const [loading, setLoading] = useState(false);
 
 return (
-<> <Navbar /> <PredictionForm setResult={setResult} /> <ResultsDisplay result={result} /> <Footer />
+<> <Navbar /> <PredictionForm setResult={setResult} setLoading={setLoading} /> <ResultsDisplay result={result} loading={loading} /> <Footer />
 </>
 );
 };

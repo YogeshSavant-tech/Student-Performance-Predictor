@@ -1,14 +1,23 @@
-// Custom hook: usePrediction
-import { predictAPI } from "../services/predictionApi";
+const usePrediction = (setResult, setLoading) => {
 
-const usePrediction = (setResult) => {
-const predict = async (data) => {
-try {
-const res = await predictAPI(data);
-setResult(res.score.toFixed(2));
-} catch (err) {
-setResult("Error");
-}
+const predict = (data) => {
+setLoading(true);
+
+```
+setTimeout(() => {
+  const { study = 0, sleep = 0, attendance = 0, prev_marks = 0 } = data;
+
+  const score =
+    study * 4 +
+    sleep * 2 +
+    attendance * 0.3 +
+    prev_marks * 0.5;
+
+  setResult(score.toFixed(2));
+  setLoading(false);
+}, 1500);
+```
+
 };
 
 return { predict };
