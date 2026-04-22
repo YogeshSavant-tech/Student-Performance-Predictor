@@ -1,16 +1,50 @@
-<!-- React app public index -->
-    <!-- React app public index -->
-    <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Performance Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">SPP</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="predict.html">Predict</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
 
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <title>GradeX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    <div id="root"></div>
-    </body>
-    </html>
+  <main class="container">
+    <section class="hero">
+      <h1>Student Performance Predictor</h1>
+      <p class="subtitle">
+        Predict student exam scores based on study habits, sleep, attendance, and past marks.
+      </p>
+      <a href="predict.html" class="btn btn-primary">Try Prediction</a>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <h3>📊 Data Driven</h3>
+        <p>Uses key academic indicators to estimate future performance.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Fast</h3>
+        <p>Get instant predictions powered by a backend ML model.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Simple</h3>
+        <p>Just enter a few values and get an estimated score.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Student Performance Predictor</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
