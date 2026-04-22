@@ -1,1 +1,0 @@
--- Seed data for Student Performance Predictor

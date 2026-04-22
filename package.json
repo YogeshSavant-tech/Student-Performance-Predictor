@@ -1,0 +1,20 @@
+{
+  "name": "student-performance-predictor",
+  "version": "1.0.0",
+  "description": "GradeX - Student Performance Predictor using ML",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": ["student", "performance", "predictor", "ml", "gradex"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,1 +1,0 @@
-// Prediction form component
