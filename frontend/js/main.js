@@ -1,4 +1,12 @@
-// GradeX - Main Application JavaScript
-// Handles dashboard functionality and common utilities
+document.addEventListener("DOMContentLoaded", function () {
+    const path = window.location.pathname.split("/").pop() || "index.html";
 
-console.log('GradeX Dashboard loaded');
+    const links = document.querySelectorAll(".nav-links a");
+    if (!links.length) return;
+
+    links.forEach((link) => {
+        if (link.getAttribute("href") === path) {
+            link.classList.add("active");
+        }
+    });
+});
