@@ -4,6 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 const predictRoutes = require('./routes/predict');
+const historyRoutes = require('./routes/history');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,6 +18,7 @@ app.use('/js', express.static(path.join(__dirname, '..', 'frontend', 'js')));
 app.use('/assets', express.static(path.join(__dirname, '..', 'frontend', 'assets')));
 
 app.use('/api/predict', predictRoutes);
+app.use('/api/history', historyRoutes);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'frontend', 'pages', 'index.html'));
@@ -37,13 +39,13 @@ app.get('/:page.html', (req, res) => {
     });
 });
 
-// ── Start server ──
 app.listen(PORT, () => {
     console.log(`\n  ✅  SPP Backend running → http://localhost:${PORT}`);
     console.log(`  📄  Home       → http://localhost:${PORT}/`);
     console.log(`  🔮  Predict    → http://localhost:${PORT}/predict`);
     console.log(`  📊  Dashboard  → http://localhost:${PORT}/dashboard`);
-    console.log(`  🔌  API        → POST http://localhost:${PORT}/api/predict\n`);
+    console.log(`  🔌  API        → POST http://localhost:${PORT}/api/predict`);
+    console.log(`  📜  History    → GET  http://localhost:${PORT}/api/history\n`);
 });
 
 module.exports = app;

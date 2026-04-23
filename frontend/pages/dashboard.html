@@ -17,18 +17,34 @@
   </nav>
 
   <main class="container">
-    <section class="placeholder">
-      <h1>Dashboard</h1>
-      <p class="subtitle">📈 Coming soon — your prediction history and analytics will appear here.</p>
+    <h1>Dashboard</h1>
+    <p class="subtitle">Your prediction history and analytics.</p>
 
-      <div class="card placeholder-card">
-        <h3>Future Features</h3>
-        <ul>
-          <li>Track past predictions</li>
-          <li>Compare student performance over time</li>
-          <li>Visualize trends with charts</li>
-        </ul>
+    <!-- Stats Cards -->
+    <div id="stats-cards" class="stats-grid">
+      <p class="muted">Loading stats...</p>
+    </div>
+
+    <!-- History Table -->
+    <section class="history-section">
+      <h2>Recent Predictions</h2>
+      <div class="table-wrap">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Study Hrs</th>
+              <th>Attendance</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="history-body"></tbody>
+        </table>
       </div>
+      <p id="empty-msg" class="muted" style="display:none; text-align:center; margin-top:1rem;">
+        No predictions yet. <a href="/predict">Make your first prediction →</a>
+      </p>
     </section>
   </main>
 
@@ -37,5 +53,6 @@
   </footer>
 
   <script src="/js/main.js"></script>
+  <script src="/js/dashboard.js"></script>
 </body>
 </html>

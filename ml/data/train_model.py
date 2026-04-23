@@ -15,7 +15,7 @@ for col in required_cols:
         raise ValueError(f"Missing column: {col}")
 
 # Features & Target
-X = df[["study_hours", "attendance"]]
+X = df[["study_hours", "attendance","score"]]
 y = df["score"]
 
 # Split

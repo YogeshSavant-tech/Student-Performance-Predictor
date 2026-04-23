@@ -7,10 +7,17 @@
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js"
   },
-  "keywords": ["student", "performance", "predictor", "ml", "gradex"],
+  "keywords": [
+    "student",
+    "performance",
+    "predictor",
+    "ml",
+    "gradex"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "better-sqlite3": "^12.9.0",
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },
