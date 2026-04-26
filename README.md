@@ -32,10 +32,105 @@ npm install
 npm run dev
 ```
 
-### ML Service (Python)
+---
+
+## 🚀 Project Overview
+
+This project uses **Machine Learning algorithms** to predict student performance (e.g., exam scores). The goal is to help educators and students understand key factors affecting academic outcomes and identify students who may need additional support.
+
+Student performance prediction is a common ML problem where models analyze factors like study time, parental education, and previous scores to estimate outcomes. ([GitHub][1])
+
+---
+
+## 🧠 Features
+
+* 📊 Predict student performance based on input data
+* 🖥️ User-friendly web interface
+* ⚡ Real-time prediction using trained ML model
+* 📈 Helps identify weak/at-risk students
+
+---
+
+## 🛠️ Tech Stack
+
+* **Programming Language:** Python
+* **Backend:** Flask
+* **Machine Learning:** Scikit-learn
+* **Data Handling:** Pandas, NumPy
+* **Frontend:** HTML, CSS
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/karanbhilare58/Student-Performance-Predictor.git
+cd Student-Performance-Predictor
+```
+
+### 2️⃣ Create virtual environment (optional but recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+```
+
+### 3️⃣ Install dependencies
+
 ```bash
 pip install -r requirements.txt
-cd ml/data
-python train_model.py
+```
+
+### 4️⃣ Run the application
+
+```bash
 python app.py
 ```
+
+### 5️⃣ Open in browser
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+## 📊 Dataset Information
+
+The dataset includes features such as:
+
+* Gender
+* Parental level of education
+* Study time
+* Test preparation course
+* Previous scores (Math, Reading, Writing)
+
+These features are commonly used in student performance prediction models. ([GitHub][2])
+
+---
+
+## 🤖 Machine Learning Model
+
+* Model Type: Regression / Classification (depending on your implementation)
+* Algorithms Used:
+
+  * Linear Regression / Random Forest / Decision Tree (update based on your model)
+* Evaluation Metrics:
+
+  * Mean Squared Error (MSE)
+  * R² Score
+
+---
+
+## 🔥 Future Improvements
+
+* Add more advanced models (XGBoost, Neural Networks)
+* Improve UI/UX design
+* Deploy project online (Render / Railway)
+* Add real-time analytics dashboard
+
+---
